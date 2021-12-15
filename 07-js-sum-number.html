@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-sum-number.html</title>
+    <script>
+        function sum(){
+            document.getElementById('output').innerHTML = parseInt(document.getElementById('text1').value) + parseInt(document.getElementById('text2').value) ;
+        }
+    </script>
+</head>
+<body>
+    Num1 :<input type="text" name="" id="text1">
+    <br>
+    <br>
+    Num2 :<input type="text" name="" id="text2">
+    <br>
+    <br>
+    <input type="button" value="submit" onclick="sum()">
+    <br>
+    <br>
+    Ans :<h id="output"></h>
+</body>
+</html>

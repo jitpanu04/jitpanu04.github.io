@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-cal-number.html</title>
+    <script>
+        function sum(n1,n2){
+            document.getElementById('output').innerHTML = parseInt(n1) + parseInt(n2) ;
+        }
+
+        function sub(n1,n2){
+            document.getElementById('output').innerHTML = parseInt(n1) - parseInt(n2) ;
+        }
+
+        function mul(n1,n2){
+            document.getElementById('output').innerHTML = parseInt(n1) * parseInt(n2) ;
+        }
+
+        function div(n1,n2){
+            document.getElementById('output').innerHTML = parseInt(n1) / parseInt(n2) ;
+        }
+    </script>
+</head>
+<body>
+    Num1 :<input type="text" name="" id="text1">
+    <br>
+    <br>
+    Num2 :<input type="text" name="" id="text2">
+    <br>
+    <br>
+    <input style="width: 100px; height: 100px;" type="button" value="+" onclick="sum(document.getElementById('text1').value,document.getElementById('text2').value)">
+    <br>
+    <br>
+    <input style="width: 100px; height: 100px;" type="button" value="-" onclick="sub(document.getElementById('text1').value,document.getElementById('text2').value)">
+    <br>
+    <br>
+    <input style="width: 100px; height: 100px;" type="button" value="*" onclick="mul(document.getElementById('text1').value,document.getElementById('text2').value)">
+    <br>
+    <br>
+    <input style="width: 100px; height: 100px;" type="button" value="/" onclick="div(document.getElementById('text1').value,document.getElementById('text2').value)">
+    <br>
+    <br>
+    Ans :<h id="output"></h>
+</body>
+</html>
